@@ -5,7 +5,7 @@ function Header()
 {
     return(
         <div className='header'>
-            <div className='wrap'>
+            <div className='wrap' style={{backgroundColor: "#F0FFF0", marginBottom: "0 !important", paddingBottom: "0"}}>
                 <div className='logo'><Link to="/">🍕🥗 F🍩🍩d 🍜🍡</Link></div>
                 <div className='right'>
                     <ul>
