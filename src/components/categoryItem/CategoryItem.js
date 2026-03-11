@@ -1,4 +1,5 @@
 import './CategoryItem.css';
+import { Link } from 'react-router-dom';
 
 function CategoryItem(props)
 {
@@ -7,9 +8,9 @@ function CategoryItem(props)
         <div className='card' style={{backgroundColor: "#F0FFF0"}}>
             <img src={strCategoryThumb} alt={strCategory} />
             <h2>{strCategory}</h2>
-            <p>{strCategoryDescription}</p>
+            <p>{strCategoryDescription.slice(0,80)}...</p>
             <div className='card-action'>
-                <a href='#1'>Watch category</a>
+                <Link to={`/category/${strCategory}`}>Watch category</Link>
             </div>
         </div>
     )
