@@ -1,4 +1,4 @@
-import Meal from './Meal';
+import Meal from './Meal.js';
 import './MealList.css';
 
 function MealList({meals})
