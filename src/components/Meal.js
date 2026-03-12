@@ -6,7 +6,7 @@ function Meal(props)
     const { strMeal, strMealThumb, idMeal } = props;
     return(
         <div className='card'>
-            <img src={strMealThumb} alt={strMeal}/>
+            <img src={strMealThumb} alt={strMeal} />
             <h2>{strMeal}</h2>
 
             <div className='card-action'>

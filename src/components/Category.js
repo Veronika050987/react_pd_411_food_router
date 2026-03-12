@@ -1,8 +1,9 @@
-import { useNavigate, useParams } from 'react-router-dom';
-import './Category.css';
 import { useEffect, useState } from 'react';
+import './Category.css';
 import { getFilteredCategory } from '../api';
+import { useNavigate, useParams } from 'react-router-dom';
 import MealList from './MealList';
+
 
 function Category()
 {
@@ -17,12 +18,12 @@ function Category()
             getFilteredCategory(name).then(data => setMeals(data.meals));
         },[name]
     );
-
     return (
         <div className='wrap'>
             <MealList meals={meals} />
             <button className='btn' onClick={goBack}>Go back</button>
         </div>
+            
     )
 }
 export default Category;

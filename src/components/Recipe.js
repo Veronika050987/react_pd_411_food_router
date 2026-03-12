@@ -10,7 +10,7 @@ function Recipe()
     const navigate = useNavigate();
     let goBack = () => navigate(-1);
 
-    useEffect(() => {getMealById(id).then((data) => setRecipe(data.meals[0]))}, [id]);
+    useEffect(() => {getMealById(id).then((data) => setRecipe(data.meals[0]))}, []);
 
     return(
         <div className='wrap'>
@@ -24,5 +24,6 @@ function Recipe()
             <button className='btn' onClick={goBack}>Go back</button>
         </div>
     )
+
 }
 export default Recipe;
