@@ -8,7 +8,7 @@ function Category()
 {
     const {name} = useParams();
     const [meals, setMeals] = useState([]);
-    const [loading, setLoading] = useState(true); // Добавьте это
+    const [loading, setLoading] = useState(true);
     const navigate = useNavigate();
     let goBack = () => navigate(-1);
 
@@ -20,7 +20,7 @@ function Category()
         });
     }, [name]);
 
-    if (loading) return <p>Загрузка...</p>; // Показываем текст, пока данные грузятся
+    if (loading) return <p>Идёт загрузка...</p>; // Показываем текст, пока данные грузятся
 
     return (
         <div className='wrap'>
