@@ -1,4 +1,4 @@
-import Meal from './Meal.js';
+import Meal from './Meal';
 import './MealList.css';
 
 function MealList({meals})
@@ -6,8 +6,7 @@ function MealList({meals})
     return(
         <div className='list'>
             {
-                meals.map
-                (
+                meals.map(
                     meal =>
                     (
                         <Meal key={meal.idMeal} {...meal} />
