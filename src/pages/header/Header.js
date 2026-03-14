@@ -5,15 +5,16 @@ function Header()
 {
     return(
         <div className='header'>
-            <div className='wrap' style={{backgroundColor: "#F0FFF0", marginBottom: "0 !important", paddingBottom: "0"}}>
-                <div className='logo'><Link to="/">🍕🥗 F🍩🍩d 🍜🍡</Link></div>
+            <div className='wrap'>
+                <div className='logo'><Link to="/">Food</Link></div>
                 <div className='right'>
                     <ul>
-                        <li><Link to="/about">🛈 About</Link></li>
-                        <li><Link to="/contacts">📞 Contacts</Link></li>
+                        <li><Link to="/about">About</Link></li>
+                        <li><Link to="/contacts">Contacts</Link></li>
                     </ul>
                 </div>
             </div>
+            
         </div>
     )
 }

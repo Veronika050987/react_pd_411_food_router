@@ -47,7 +47,7 @@ function Recipe()
                         }
                     </tbody>
                 </table>
-                {/* {
+                {
                     !(recipe.strYoutube) ? null :
                     (
                         <div>
@@ -56,7 +56,7 @@ function Recipe()
                                 <iframe title={id} src={`htpps://www.youtube.com/embed/${recipe.strYoutube.slice(-11)}`} allowFullScreen/>
                         </div>
                     ) 
-                } */}
+                }
             </div>
             <button className='btn' onClick={goBack}>Go back</button>
         </div>

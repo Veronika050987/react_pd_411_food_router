@@ -1,11 +1,11 @@
 import './CategoryItem.css';
-import { Link } from 'react-router-dom';
+import {Link} from 'react-router-dom';
 
 function CategoryItem(props)
 {
-    const {strCategory, strCategoryThumb, strCategoryDescription} = props;
-    return(
-        <div className='card' style={{backgroundColor: "#F0FFF0"}}>
+    const { strCategory, strCategoryThumb, strCategoryDescription } = props;
+    return (
+        <div className='card'>
             <img src={strCategoryThumb} alt={strCategory} />
             <h2>{strCategory}</h2>
             <p>{strCategoryDescription.slice(0,80)}...</p>
