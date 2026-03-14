@@ -37,7 +37,7 @@
     display: flex;
     justify-content: space-around;
 }
-@media (max-width: 768px) {
+@media (max-width: 619px) {
   .header {
     width: 100%; /* Сбрасываем жесткую ширину */
   }
