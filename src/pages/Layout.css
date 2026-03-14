@@ -8,13 +8,15 @@ body, html {
   display: flex;
   flex-direction: column;
   min-height: 100vh; /* Минимальная высота — весь экран */
+  width: 100vw; /* Ширина экрана */
+  overflow-x: hidden; /* Важно для мобилок! */
 }
 
 .content {
   flex: 1; /* Заставляет main занимать всё свободное пространство */
-  padding: 16px; /* Отступы по бокам для мобилок */
+  /*padding: 16px; /* Отступы по бокам для мобилок */
   width: 100%;
-  box-sizing: border-box; /* Чтобы padding не ломал ширину */
+  max-width: 100%;
 }
 
 /* Медиа-запрос для специфических правок на мобильных */
