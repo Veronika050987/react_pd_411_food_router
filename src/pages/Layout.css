@@ -1,0 +1,25 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.layout-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Минимальная высота — весь экран */
+}
+
+.content {
+  flex: 1; /* Заставляет main занимать всё свободное пространство */
+  padding: 16px; /* Отступы по бокам для мобилок */
+  width: 100%;
+  box-sizing: border-box; /* Чтобы padding не ломал ширину */
+}
+
+/* Медиа-запрос для специфических правок на мобильных */
+@media (max-width: 768px) {
+  .content {
+    padding: 10px;
+  }
+}
