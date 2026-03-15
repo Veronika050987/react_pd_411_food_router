@@ -11,7 +11,7 @@ function Header()
                     <ul>
                         <li>
                             <Link to="/about">
-                              <span className='icon'>🛈</span>
+                              <span className='icon'>𝒊</span>
                               <span className='text'>About</span> 
                             </Link>
                         </li>

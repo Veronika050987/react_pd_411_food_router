@@ -29,7 +29,7 @@
     align-items: center;
     gap: 5px; /* расстояние между иконкой и текстом */
 }
-@media (max-width: 480px) {
+@media (max-width: 460px) {
     .header .right ul li .text {
         display: none; /* Текст исчезает */
     }
