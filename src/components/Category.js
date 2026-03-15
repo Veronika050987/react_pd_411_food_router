@@ -20,7 +20,13 @@ function Category()
         });
     }, [name]);
 
-    if (loading) return <p>Идёт загрузка...</p>; // Показываем текст, пока данные грузятся
+    if (loading) return( 
+    <div>
+     <p style={{color:'#006400', fontSize: '55px', fontWeight: 'bold'}}>(๑ᵔ⤙ᵔ๑)</p>
+     <p style={{color:'#006400', fontSize: '30px'}}>Preparing recipes for you...</p>
+    </div>
+    )
+    
 
     return (
         <div className='wrap'>

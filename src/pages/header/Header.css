@@ -37,10 +37,12 @@
 
     /* Дополнительно: можно увеличить иконки, чтобы по ним было легче попадать */
     .header .right ul li .icon {
-        font-size: 25px; 
+        font-size: 25px;
+        align-items: center; 
     }
     .header .right ul {
         gap: 2px; /* Уменьшаем расстояние между кнопками */
+         align-items: center;
     }
     /* Добавляем отступы для удобства клика */
     /* .header .right ul li a {
