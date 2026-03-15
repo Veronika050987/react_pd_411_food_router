@@ -36,12 +36,12 @@
 
     /* Дополнительно: можно увеличить иконки, чтобы по ним было легче попадать */
     .header .right ul li .icon {
-        font-size: 20px; 
+        font-size: 25px; 
     }
     
     /* Добавляем отступы для удобства клика */
     .header .right ul li a {
-        padding: 10px;
+        padding: 6px;
     }
 }
 .right
