@@ -35,6 +35,14 @@
     .header .right ul li .text {
         display: none;
     }
+     .header .right {
+        margin-left: -40px; /* Сдвиг вправо, чтобы скомпенсировать padding родителя */
+    }
+
+    /* 6. Страховка для родителя, чтобы контент не вылетал */
+    .header .wrap {
+        padding: 0 10px; /* Уменьшаем боковые поля, освобождая место для контента */
+    }
 }
 @media screen and (orientation: landscape) and (max-width: 800px) {
    .header .right ul li .text {
