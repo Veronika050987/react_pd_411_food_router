@@ -31,23 +31,46 @@
     gap: 1px; /* расстояние между иконкой и текстом */
 }
 @media (max-width: 460px) {
+    /* 1. Скрываем текст */
     .header .right ul li .text {
-        display: none; /* Текст исчезает */
+        display: none;
     }
 
-    /* Дополнительно: можно увеличить иконки, чтобы по ним было легче попадать */
+    /* 2. Увеличиваем иконки и центрируем их */
     .header .right ul li .icon {
         font-size: 25px;
-        align-items: center; 
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
+
+    /* 3. Уменьшаем расстояние между кнопками */
     .header .right ul {
-        gap: 2px; /* Уменьшаем расстояние между кнопками */
-         align-items: center;
+        gap: 5px; /* Немного больше 2px, чтобы кнопки не слипались */
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        display: flex;
+        align-items: center;
     }
-    /* Добавляем отступы для удобства клика */
-    /* .header .right ul li a {
-        padding: 6px;
-    } */
+
+    /* 4. Настройка ссылок для лучшего попадания пальцем */
+    .header .right ul li a {
+        padding: 5px; /* Компактный отступ */
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+    }
+
+    /* 5. Дополнительная страховка: сдвигаем блок чуть левее, если он не влезает */
+    .header .right {
+        margin-right: -5px; /* Сдвиг вправо, чтобы скомпенсировать padding родителя */
+    }
+
+    /* 6. Страховка для родителя, чтобы контент не вылетал */
+    .header .wrap {
+        padding: 0 10px; /* Уменьшаем боковые поля, освобождая место для контента */
+    }
 }
 .right
 {
