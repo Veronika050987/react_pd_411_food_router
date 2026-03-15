@@ -30,10 +30,17 @@
     align-items: center;
     gap: 1px; /* расстояние между иконкой и текстом */
 }
+/* 1. Мобильный (портретный) - скрываем текст (ваш текущий код) */
 @media (max-width: 460px) {
-    /* 1. Скрываем текст */
     .header .right ul li .text {
         display: none;
+    }
+}
+@media screen and (orientation: landscape) and (max-width: 800px) {
+   .header .right ul li .text {
+        display: inline-block; /* Или block, возвращаем текст на экран */
+        margin-left: 5px;      /* Небольшой отступ от иконки */
+        font-size: 16px;       /* Возвращаем нормальный размер текста */
     }
 
     /* 2. Увеличиваем иконки и центрируем их */
