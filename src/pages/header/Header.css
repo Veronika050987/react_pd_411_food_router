@@ -80,13 +80,13 @@
         display: inline-block; /* Или block, возвращаем текст на экран */
         margin-left: 5px;      /* Небольшой отступ от иконки */
         font-size: 16px;       /* Возвращаем нормальный размер текста */
-        margin-left: -10px;
+        margin-left: -20px;
     }
 
     /* Возвращаем иконкам исходный размер, если нужно */
     .header .right ul li .icon {
         font-size: 20px; 
-         margin-left: -15px;
+         margin-left: -35px;
     }
     /* 5. Дополнительная страховка: сдвигаем блок чуть левее, если он не влезает */
     .header .right {
