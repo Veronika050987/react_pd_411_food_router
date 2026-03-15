@@ -1,5 +1,6 @@
 @import url(
 'https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
 .header
 {
     background-color: #F4A460;
@@ -39,7 +40,7 @@
         font-size: 25px; 
     }
     .header .right ul {
-        gap: 5px; /* Уменьшаем расстояние между кнопками */
+        gap: 3px; /* Уменьшаем расстояние между кнопками */
     }
     /* Добавляем отступы для удобства клика */
     /* .header .right ul li a {

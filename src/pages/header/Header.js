@@ -1,5 +1,7 @@
 import './Header.css';
 import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faInfoCircle, faPhone } from '@fortawesome/free-solid-svg-icons';
 
 function Header()
 {
@@ -11,13 +13,13 @@ function Header()
                     <ul>
                         <li>
                             <Link to="/about">
-                              <span className='icon'>𝒊</span>
+                              <span className='icon'><FontAwesomeIcon icon={faInfoCircle} /></span>
                               <span className='text'>About</span> 
                             </Link>
                         </li>
                         <li>
                             <Link to="/contacts">
-                               <span className='icon'>✆</span>
+                               <span className='icon'><FontAwesomeIcon icon={faPhone} /></span>
                                <span className='text'>Contacts</span>
                             </Link>
                         </li>
