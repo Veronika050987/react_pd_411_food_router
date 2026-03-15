@@ -43,7 +43,7 @@
     /* Если .right содержит много элементов, которые раньше были разнесены, 
        на мобильном лучше их выровнять по центру или по левому краю: */
     .header > .wrap > .right {
-        justify-content: space-between; /* Или space-between, но с меньшими отступами */
+        justify-content: space-evenly; /* Или space-between, но с меньшими отступами */
         flex-wrap: wrap; /* Разрешаем перенос, если элементов слишком много */
     }
     
