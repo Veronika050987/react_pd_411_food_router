@@ -75,29 +75,29 @@
 }
 
 /* 2. Альбомная ориентация (от 461px и выше) - показываем текст */
-@media (min-width: 461px) {
+/* @media (min-width: 461px) {
     .header .right ul li .text {
         display: inline-block; /* Или block, возвращаем текст на экран */
-        margin-left: 5px;      /* Небольшой отступ от иконки */
-        font-size: 16px;       /* Возвращаем нормальный размер текста */
-        margin-left: -20px;
-    }
+       /* margin-left: 5px;      /* Небольшой отступ от иконки */
+       /* font-size: 16px;       /* Возвращаем нормальный размер текста */
+        /*margin-left: -20px;
+    /*}
 
     /* Возвращаем иконкам исходный размер, если нужно */
-    .header .right ul li .icon {
+   /* .header .right ul li .icon {
         font-size: 20px; 
          margin-left: -35px;
     }
     /* 5. Дополнительная страховка: сдвигаем блок чуть левее, если он не влезает */
-    .header .right {
+   /* .header .right {
         margin-left: -90px; /* Сдвиг вправо, чтобы скомпенсировать padding родителя */
-    }
+   /* }
 
     /* 6. Страховка для родителя, чтобы контент не вылетал */
-    .header .wrap {
+    /*.header .wrap {
         padding: 0 10px; /* Уменьшаем боковые поля, освобождая место для контента */
-    }
-}
+   /* }
+/*} */
 .right
 {
     width: 30%;
