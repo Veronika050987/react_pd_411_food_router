@@ -9,8 +9,18 @@ function Header()
                 <div className='logo'><Link to="/">🥣Food🍳</Link></div>
                 <div className='right'>
                     <ul>
-                        <li><Link to="/about">ⓘ️About</Link></li>
-                        <li><Link to="/contacts">✆Contacts</Link></li>
+                        <li>
+                            <Link to="/about">
+                              <span className='icon'>🛈</span>
+                              <span className='text'>About</span> 
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to="/contacts">
+                               <span className='icon'>✆</span>
+                               <span className='text'>Contacts</span>
+                            </Link>
+                        </li>
                     </ul>
                 </div>
             </div>

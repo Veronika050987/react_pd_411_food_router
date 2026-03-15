@@ -24,19 +24,24 @@
     justify-content: space-between;
     align-items: center;
 }
+.header .right ul li a {
+    display: flex;
+    align-items: center;
+    gap: 5px; /* расстояние между иконкой и текстом */
+}
 @media (max-width: 480px) {
-    .header .wrap {
-        padding: 5px 10px; /* Уменьшаем отступы на совсем маленьких экранах */
-        gap: 10px; /* Уменьшаем расстояние между лого и списком */
+    .header .right ul li .text {
+        display: none; /* Текст исчезает */
     }
 
-    .header .right ul {
-        gap: 10px; /* Сжимаем расстояние между About и Contacts */
+    /* Дополнительно: можно увеличить иконки, чтобы по ним было легче попадать */
+    .header .right ul li .icon {
+        font-size: 20px; 
     }
-
+    
+    /* Добавляем отступы для удобства клика */
     .header .right ul li a {
-        font-size: 14px; /* Немного уменьшаем шрифт, чтобы точно влезло */
-        white-space: nowrap; /* Гарантирует, что слово не перенесется */
+        padding: 10px;
     }
 }
 .right
