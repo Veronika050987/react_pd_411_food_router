@@ -38,7 +38,9 @@
     .header .right ul li .icon {
         font-size: 25px; 
     }
-    
+    .header .right ul {
+        gap: 5px; /* Уменьшаем расстояние между кнопками */
+    }
     /* Добавляем отступы для удобства клика */
     /* .header .right ul li a {
         padding: 6px;
