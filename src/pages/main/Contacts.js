@@ -10,7 +10,7 @@ function Contacts()
     return(
         <div className='wrap'>
             <h2>📜Contacts</h2>
-            <h3>{text.description}</h3>
+            <h3>📥{text.description}</h3>
         </div>
     )
 }
