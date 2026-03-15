@@ -24,18 +24,19 @@
     justify-content: space-between;
     align-items: center;
 }
-@media (max-width: 768px) {
-    .header > .wrap > .right {
-        display: flex;
-        flex-wrap: wrap; /* Разрешаем перенос */
-        justify-content: center; /* Центрируем элементы при переносе */
-        gap: 10px; /* Добавляем расстояние между элементами */
+@media (max-width: 480px) {
+    .header .wrap {
+        padding: 5px 10px; /* Уменьшаем отступы на совсем маленьких экранах */
+        gap: 10px; /* Уменьшаем расстояние между лого и списком */
     }
 
-    /* ВАЖНО: Указываем элементам внутри .right, что на мобилке они должны быть пошире */
-    .header > .wrap > .right > * {
-        flex: 1 1 100%; /* Элемент занимает 100% ширины, если не влезает */
-        text-align: center; /* Центрируем текст внутри элементов */
+    .header .right ul {
+        gap: 10px; /* Сжимаем расстояние между About и Contacts */
+    }
+
+    .header .right ul li a {
+        font-size: 14px; /* Немного уменьшаем шрифт, чтобы точно влезло */
+        white-space: nowrap; /* Гарантирует, что слово не перенесется */
     }
 }
 .right
