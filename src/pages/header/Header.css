@@ -40,9 +40,9 @@
     }
     
     /* Добавляем отступы для удобства клика */
-    .header .right ul li a {
+    /* .header .right ul li a {
         padding: 6px;
-    }
+    } */
 }
 .right
 {
