@@ -28,7 +28,7 @@
 .header .right ul li a {
     display: flex;
     align-items: center;
-    gap: 5px; /* расстояние между иконкой и текстом */
+    gap: 1px; /* расстояние между иконкой и текстом */
 }
 @media (max-width: 460px) {
     .header .right ul li .text {
@@ -40,7 +40,7 @@
         font-size: 25px; 
     }
     .header .right ul {
-        gap: 3px; /* Уменьшаем расстояние между кнопками */
+        gap: 2px; /* Уменьшаем расстояние между кнопками */
     }
     /* Добавляем отступы для удобства клика */
     /* .header .right ul li a {
